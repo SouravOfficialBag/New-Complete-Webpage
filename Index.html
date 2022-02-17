@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <h1>Practice</h1>
+  </header>  
+  <!--stycky navbar!-->
+  <nav id="navbar"> 
+      <a class="spacea" href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+  </nav>
+  <main>
+      <section>
+          <h2>Home</h2>
+          <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eveniet voluptatem ipsum illo possimus aut! Rem ut neque, recusandae quos quaerat temporibus est placeat ea ad sunt! Tempore voluptate vitae libero assumenda necessitatibus quasi officia maiores nostrum mollitia molestias sequi consequatur, corrupti aspernatur veritatis rem soluta atque optio voluptates vero, ex quaerat. Labore totam ad quidem, necessitatibus rem architecto corporis molestiae esse eum! Doloribus deserunt quia asperiores aspernatur at dignissimos. Sequi accusamus nobis iure? Expedita unde iure possimus optio, amet minus quas provident dicta illo vero, dolor enim ipsum ipsa fugit deleniti error hic libero deserunt perspiciatis animi ducimus beatae?
+          </p>
+      </section>
+      <section>
+          <h2>Products</h2>
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat officia voluptatum? Dolores enim fugiat at, libero magni eveniet illum magnam voluptate officiis excepturi aspernatur provident iste mollitia, dolore alias repudiandae nesciunt consectetur voluptatum pariatur molestias a corrupti necessitatibus cupiditate dicta? Esse deserunt odio deleniti. Placeat, rem incidunt? Voluptatem, sint! Ullam eligendi voluptatem architecto qui dignissimos aliquid beatae blanditiis cupiditate nulla atque, velit sit doloremque, veniam voluptas non et est quaerat quidem similique ipsa. Dolorum iusto nostrum explicabo quas non accusantium omnis sequi molestias nesciunt. Quisquam dicta minus maxime nulla laborum deserunt architecto consequuntur similique sed fugiat non quibusdam voluptatibus doloremque ullam, inventore repellat nisi repellendus dolorum modi quam? Recusandae alias nostrum earum laudantium veritatis sed dolore cumque quae porro, fugit labore laboriosam veniam debitis dolorem ipsum quidem? Natus, veritatis ullam culpa nisi placeat quisquam temporibus consequuntur, corporis et earum labore voluptates. Autem rerum quasi blanditiis dolore provident amet molestiae hic ratione ducimus molestias in magni sapiente quas nisi dignissimos tenetur praesentium fugiat nesciunt, officiis cupiditate sed repudiandae! Facere similique dolorem minus impedit dolore, quae eligendi rem voluptates dicta ad dolor quisquam quasi ut fuga quod soluta id, neque autem aut minima perspiciatis quibusdam maxime quia! Quaerat labore quibusdam iure dolore, illum ea voluptates laudantium, id ad excepturi accusantium ratione iste? Cum eaque, voluptate ipsam nam quaerat error quidem cumque quibusdam iste expedita vitae odit nostrum nisi deserunt explicabo quos earum. Excepturi similique optio, soluta voluptas nihil earum. Id reprehenderit blanditiis ab non. Voluptate in ducimus atque hic! Sed nemo, a consectetur ipsa facilis aliquam sapiente corrupti itaque labore iure libero, facere aspernatur sunt.
+          </p>
+      </section>
+      <section>
+          <h2>Gallery</h2>
+          <img id="imag1" src="Haridwar.jpg" alt="">
+          <img id="imag2" src="Varanasi.png" alt="">
+          <br>
+          <br>
+          <br>       
+          <img id="imag3" src="Puri.jpg" alt="">
+          <img id="imag4" src="Goa.jpg" alt="">
+          <br>
+          <br>
+          <br>    
+          <img id="imag5" src="Himachal.jpg" alt="">
+          <img id="imag6" src="Darjeeling.png" alt="">
+      </section>
+      <section>
+          <h2>Contact Us</h2>
+          <p>
+            Name
+            <input type="text" name="name" id="name">
+            </p>
+            <p>
+            E-Mail
+            <input type="email" name="email" id="email">
+            </p>
+            <p>
+            Message
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </p>
+            <input type="submit" value="SUBMIT" class="submit_btn">
+        </section>
+  </main>
+  <footer>
+      <div class="footer">&copy;Sourav Bag</div>
+  </footer>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
